@@ -1,0 +1,94 @@
+/* =========================================================
+   JELAJAH SULBAR — CSS tambahan di atas Bootstrap 5
+   Hanya berisi tema warna (ungu) dan penyesuaian kecil.
+   ========================================================= */
+
+:root {
+    --bs-primary: #6B4EE6;
+    --bs-primary-rgb: 107, 78, 230;
+    --bs-link-color: #6B4EE6;
+    --bs-link-color-rgb: 107, 78, 230;
+    --bs-link-hover-color: #5036C9;
+    --bs-body-font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --bs-body-color: #1E1B3A;
+    --bs-secondary-color: #6A6585;
+    --ungu-muda: #F3F0FD;
+}
+
+body {
+    background: linear-gradient(180deg, #FDEEF5 0, #F4EFFD 520px, #F8F6FF 900px) no-repeat #F8F6FF;
+}
+
+.text-secondary { color: #6A6585 !important; }
+.fw-extrabold { font-weight: 800; }
+
+/* Tombol & komponen Bootstrap bertema ungu */
+.btn-primary {
+    --bs-btn-bg: #6B4EE6; --bs-btn-border-color: #6B4EE6;
+    --bs-btn-hover-bg: #5036C9; --bs-btn-hover-border-color: #5036C9;
+    --bs-btn-active-bg: #5036C9; --bs-btn-active-border-color: #5036C9;
+    --bs-btn-disabled-bg: #6B4EE6; --bs-btn-disabled-border-color: #6B4EE6;
+}
+.btn-outline-primary {
+    --bs-btn-color: #6B4EE6; --bs-btn-border-color: #6B4EE6;
+    --bs-btn-hover-bg: #6B4EE6; --bs-btn-hover-border-color: #6B4EE6;
+    --bs-btn-active-bg: #6B4EE6; --bs-btn-active-border-color: #6B4EE6;
+}
+.alert-primary { --bs-alert-bg: #F3F0FD; --bs-alert-border-color: #E7E1F9; --bs-alert-color: #3b2a96; }
+.form-control:focus { border-color: #6B4EE6; box-shadow: 0 0 0 .25rem rgba(107, 78, 230, .2); }
+.text-primary { color: #6B4EE6 !important; }
+
+/* Navbar */
+.navbar .nav-link.active { color: #6B4EE6; font-weight: 700; }
+.navbar .btn.active { background: #5036C9; border-color: #5036C9; }
+.brand-ikon {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 36px; height: 36px; border-radius: 10px; color: #fff;
+    font-size: .85rem; font-weight: 800;
+    background: linear-gradient(135deg, #6B4EE6, #9B7BEF);
+}
+.brand-ikon-besar { width: 56px; height: 56px; border-radius: 16px; font-size: 1.1rem; }
+
+/* Ikon SVG */
+.ikon { width: 1.1em; height: 1.1em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; vertical-align: -.15em; }
+.ikon-kotak {
+    display: flex; align-items: center; justify-content: center;
+    width: 52px; height: 52px; border-radius: 14px;
+    background: var(--ungu-muda); color: #6B4EE6; font-size: 1.4rem;
+}
+
+/* Teks pendukung */
+.aksen { color: #6B4EE6; }
+.label-kecil { color: #6B4EE6; font-weight: 700; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; }
+.tautan-panah { text-decoration: none; }
+.tautan-panah:hover { text-decoration: underline; }
+.bagian { margin-top: 3rem; margin-bottom: 3rem; }
+.judul-halaman { background: linear-gradient(135deg, #F3F0FD, #FDEEF5); border-bottom: 1px solid #E7E1F9; }
+
+/* Hero */
+.hero-foto img { border-radius: 24px; box-shadow: 0 12px 32px rgba(80, 54, 201, .15); aspect-ratio: 16 / 10; object-fit: cover; }
+
+/* Kartu */
+.card { border-radius: 16px; overflow: hidden; }
+.card-img-top { aspect-ratio: 16 / 10; object-fit: cover; }
+.kartu-tautan, .kartu-wisata { transition: transform .2s, box-shadow .2s; }
+.kartu-tautan:hover, .kartu-wisata:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(80, 54, 201, .15) !important; }
+.statistik { background: var(--ungu-muda); color: #6B4EE6; }
+.statistik span { color: #6A6585; }
+.foto-caption { background: linear-gradient(180deg, transparent 40%, rgba(20, 15, 50, .75)); }
+
+/* CTA */
+.cta { background: linear-gradient(135deg, #6B4EE6, #9B7BEF); color: #fff; }
+.cta-foto { min-height: 240px; }
+
+/* Detail */
+#detailDayaTarik li { padding-left: 0; background: transparent; }
+#detailDayaTarik li::before { content: "\2713"; color: #6B4EE6; font-weight: 800; margin-right: .6rem; }
+
+/* Login */
+.login-kartu { border-radius: 24px; }
+
+/* Footer */
+.footer-situs { background: #1E1B3A; color: #cfc9ee; }
+.footer-situs .nav-link { color: #cfc9ee; }
+.footer-situs .nav-link:hover { color: #fff; }
